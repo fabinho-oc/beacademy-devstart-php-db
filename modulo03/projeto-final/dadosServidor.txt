@@ -1,0 +1,4 @@
+devstart_paylivre\beacademy-devstart-poo\modulo02\projeto-final>
+
+php -S localhost:8000 -t public
+este comando para subir o servidor apenas da pasta que o usuario irá acessar, sem que ele tenha acesso ao código.

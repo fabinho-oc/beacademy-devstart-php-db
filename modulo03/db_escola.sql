@@ -7,6 +7,7 @@ USE db_escola;
 --CRIAR TABELAS
 --regra "UNIQUE", não permite repetir os dados
 CREATE TABLE tb_professor(
+    id INT(11) PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100) NOT NULL,
     cpf CHAR(11) UNIQUE NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL
@@ -43,8 +44,14 @@ VALUES (
 );
 
 --exibir o que consta na tabela professor / SELECIONAR OS DADOS--
-SELECT * FROM tb_professor;
+SELECT * FROM tb_professor; 
+-- o asterisco significa selecionar todos
+
+
 
 -- tarefa na aula 04
 --pesquisar: chave primaria e chave candidata
 --pesquisar UUID
+
+DELETE FROM tb_professor WHERE id='2';
+--deleta a linha com id 2 da tabela tb_professor;
